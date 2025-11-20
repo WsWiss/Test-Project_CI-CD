@@ -1,0 +1,50 @@
+# Docker
+**/docker-compose.override.yml
+**/Dockerfile.*
+**/docker-entrypoint.sh
+**/docker/.env
+
+# Docker volumes и данные контейнеров
+**/kafka-data/
+**/prometheus/
+**/grafana/
+**/registry/
+**/gitlab-runner/
+
+# Логи контейнеров
+*.log
+**/logs/
+**/tmp/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Ansible
+*.retry
+*.cache
+.ansible/
+
+# Node.js
+node_modules/
+
+# Общие IDE и ОС
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Kubernetes / Helm
+**/helm-charts/
+**/kubeconfig/
