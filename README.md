@@ -37,20 +37,19 @@
 
 ---
 
-## Структура проекта:
 project/
 ├─ docker-compose.yml
-├─ devops/ # Dockerfile и утилиты DevOps контейнера
-├─ workspace/ # Основная рабочая директория для Terraform, Ansible, Kubernetes
-│ ├─ terraform/
-│ ├─ ansible/
-│ ├─ kubernetes/
-│ └─ scripts/
+├─ devops/                 # Dockerfile и утилиты DevOps контейнера
+├─ workspace/              # Основная рабочая директория для Terraform, Ansible, Kubernetes
+│  ├─ terraform/
+│  ├─ ansible/
+│  ├─ kubernetes/
+│  └─ scripts/
 ├─ prometheus/
-│ └─ prometheus.yml
+│  └─ prometheus.yml
 ├─ grafana/
-│ └─ dashboards/
-├─ kafka-data/ # Volume для Kafka
+│  └─ dashboards/
+├─ kafka-data/             # Volume для Kafka
 └─ .gitignore
 
 - `workspace/` — папка для работы с кодом и конфигурациями через DevOps контейнер.
